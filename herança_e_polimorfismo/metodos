@@ -1,0 +1,29 @@
+
+import datetime
+
+def aniversario_week(data_an):
+    if data_an == 0:
+        print('Voce nasceu na segunda')
+    elif data_an == 1:
+        print('Voce nasceu na terça')
+    elif data_an == 2:
+        print('Voce nasceu na quarta')
+    elif data_an == 3:
+        print('Voce nasceu na quinta')
+    elif data_an == 4:
+        print('Voce nasceu na sexta')
+    elif data_an == 5:
+        print('Voce nasceu na sabado')
+    elif data_an == 6:
+        print('Voce nasceu na domingo')
+
+manutencao = datetime.datetime.combine((datetime.datetime.now() + datetime.timedelta(days=1)), datetime.time())
+
+print(manutencao)
+print(type(manutencao))
+print(repr(manutencao))
+print(manutencao.weekday())
+
+aniversario = datetime.datetime(1992, 12, 4)
+aniversario_week(aniversario.weekday())
+

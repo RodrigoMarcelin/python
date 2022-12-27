@@ -1,0 +1,3 @@
+"""
+bloco try/except
+"""
